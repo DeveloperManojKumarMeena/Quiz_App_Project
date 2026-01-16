@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "question": "What is the purpose of 'useMemo' hook in React?",
+    "options": [
+      "To create a mutable reference",
+      "To memoize expensive calculations",
+      "To handle side effects",
+      "To update the state synchronously"
+    ],
+    "answer": "To memoize expensive calculations"
+  },
+  {
+    "id": 2,
+    "question": "Which lifecycle method is replaced by useEffect(() => {}, [])?",
+    "options": [
+      "componentDidUpdate",
+      "componentWillUnmount",
+      "componentDidMount",
+      "shouldComponentUpdate"
+    ],
+    "answer": "componentDidMount"
+  },
+  {
+    "id": 3,
+    "question": "What is the 'Reconciliation' process in React?",
+    "options": [
+      "The process of updating the real DOM based on Virtual DOM changes",
+      "The process of compiling JSX to JS",
+      "The process of connecting React to Redux",
+      "The process of bundling assets"
+    ],
+    "answer": "The process of updating the real DOM based on Virtual DOM changes"
+  },
+  {
+    "id": 4,
+    "question": "How can you optimize performance for a component that renders the same result with the same props?",
+    "options": [
+      "Use useReducer",
+      "Use React.memo()",
+      "Use context API",
+      "Use a Class component"
+    ],
+    "answer": "Use React.memo()"
+  },
+  {
+    "id": 5,
+    "question": "What is the use of 'React.createPortal'?",
+    "options": [
+      "To create a new state",
+      "To render children into a DOM node outside the parent hierarchy",
+      "To fetch data from an API",
+      "To manage global themes"
+    ],
+    "answer": "To render children into a DOM node outside the parent hierarchy"
+  },
+  {
+    "id": 6,
+    "question": "In React, what is a 'Higher-Order Component' (HOC)?",
+    "options": [
+      "A component that manages state for its children",
+      "A function that takes a component and returns a new component",
+      "A component with high CPU usage",
+      "A hook that handles API calls"
+    ],
+    "answer": "A function that takes a component and returns a new component"
+  },
+  {
+    "id": 7,
+    "question": "What is the correct way to access the previous state in a functional component using useState?",
+    "options": [
+      "By using a global variable",
+      "By passing a function to the state setter",
+      "By calling the state variable directly",
+      "By using the usePrevious hook"
+    ],
+    "answer": "By passing a function to the state setter"
+  },
+  {
+    "id": 8,
+    "question": "Why is 'key' prop important in lists?",
+    "options": [
+      "To style the list items",
+      "To uniquely identify elements and help React optimize rendering",
+      "To bind data to the DOM",
+      "To prevent errors in loops"
+    ],
+    "answer": "To uniquely identify elements and help React optimize rendering"
+  },
+  {
+    "id": 9,
+    "question": "Which hook is used to perform side effects in functional components?",
+    "options": [
+      "useContext",
+      "useReducer",
+      "useEffect",
+      "useLayoutEffect"
+    ],
+    "answer": "useEffect"
+  },
+  {
+    "id": 10,
+    "question": "What happens if you call setState inside the render() method?",
+    "options": [
+      "The component updates successfully",
+      "It causes an infinite loop",
+      "It shows a warning but works",
+      "It renders the component twice"
+    ],
+    "answer": "It causes an infinite loop"
+  }
+]
