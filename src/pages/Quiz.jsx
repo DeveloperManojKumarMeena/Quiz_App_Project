@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import Timer from '../components/Timer'
 import ProgressBar from '../components/ProgressBar'
 import QuestionCard from '../components/QuestionCard'
@@ -29,6 +29,12 @@ function Quiz() {
     dispatch({type : "ANSWER", payload : option === current.answer})
     reset();
   }
+  useEffect(()=>{
+    if(Time===0){
+      dispatch({type: "ANSWER",payload:false})
+      reset()
+    }
+  },[Time])
 
   return (
     <div className="container mt-4">

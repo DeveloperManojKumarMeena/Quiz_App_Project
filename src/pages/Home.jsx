@@ -12,7 +12,7 @@ function Home() {
 
   const startQuiz = ()=>{
     if(!name.trim())return alert("Please enter your name")
-      dispatch({type:"Set_Name",payload:name})
+      dispatch({type:"SET_NAME",payload:name})
       navigate("/quiz")
   }
 
