@@ -18,7 +18,8 @@ function Result() {
         }
 
         const stored = JSON.parse(localStorage.getItem("board")) || [];
-        const updated = [...stored,entry]
+        const updated = [...stored,entry];
+        updated.sort((a,b)=> b.score - a.score)
 
         localStorage.setItem("board" , JSON.stringify(updated))
     },[])
@@ -34,7 +35,7 @@ function Result() {
                 <Link to="/leaderboard" className="btn btn-primary">
                    View Leaderboard
                 </Link>
-                <Link to="/" className="btn btn-warning">
+                <Link onClick={()=>dispatch({type : "RESET"})} to="/" className="btn btn-warning">
                     Home
                 </Link>
             </div>
